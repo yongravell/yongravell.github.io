@@ -2,6 +2,7 @@ import {defineConfig} from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  lastUpdated: true,
   title: "我的文档",
   description: "A VitePress Site",
   themeConfig: {
