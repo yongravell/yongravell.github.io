@@ -1,25 +1,29 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
 hero:
-  name: "My Awesome Project"
-  text: "A VitePress Site"
-  tagline: My great project tagline
-  actions:
-    - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
+  text: 文档地图导航
+  tagline: 点击下方节点快速访问
 
-features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
+<script setup>
+import DocTree from './.vitepress/components/DocTree.vue';
+
+const docMap = [
+  {
+    text: '数据库',
+    items: [
+      { text: 'mysql基础操作', link: '/databases/mysql' },
+    ]
+  },
+  {
+    text: '中间件',
+    items: [
+      { text: 'openvpn搭建', link: '/middleware/openvpn' },
+    ]
+  }
+]
+</script>
+
+<DocTree :items="docMap"></DocTree>
