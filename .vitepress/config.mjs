@@ -5,6 +5,7 @@ export default defineConfig({
   lastUpdated: true,
   title: "我的文档",
   description: "A VitePress Site",
+  head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
