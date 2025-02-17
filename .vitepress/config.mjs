@@ -5,12 +5,12 @@ export default defineConfig({
   lastUpdated: true,
   title: "我的文档",
   description: "A VitePress Site",
-  head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
+  head: [['link', {rel: 'icon', href: '/favicon.ico'}]],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       {text: '主页', link: '/'},
-      {text: '操作系统', link: '/system/ssl-certificate'},
+      {text: '系统应用', link: '/system/ssl-certificate'},
       {text: '中间件', link: '/middleware/nginx'},
       {text: '数据库', link: '/databases/mysql'},
       {text: 'python', link: '/python/install'}
@@ -72,7 +72,7 @@ export default defineConfig({
     },
 
     // socialLinks: [
-      // {icon: 'github', link: 'https://github.com/yongravell/yongravell.github.io'}
+    // {icon: 'github', link: 'https://github.com/yongravell/yongravell.github.io'}
     // ]
   }
 })
